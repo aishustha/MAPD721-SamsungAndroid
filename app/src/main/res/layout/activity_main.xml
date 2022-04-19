@@ -9,7 +9,8 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/statusBluetoonthTv"
+        android:layout_marginTop="60dp"
+        android:id="@+id/statusBluetoothTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
@@ -23,22 +24,29 @@
         android:layout_width="100dp"
         android:layout_height="100dp"/>
 
-    <Button
-        android:id="@+id/onBtn"
-        android:minWidth="200dp"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Turn On"/>
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/onBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Turn On"/>
+
+        <Button
+            android:id="@+id/offBtn"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn Off"/>
+    </LinearLayout>
+
+
 
     <Button
-        android:id="@+id/offBtn"
-        android:minWidth="200dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Turn Off"/>
-
-    <Button
-        android:id="@+id/discoverableBtn"
+        android:id="@+id/discoverBtn"
         android:minWidth="200dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,6 +65,9 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textColor="#000"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
         android:minWidth="200dp"/>
 
 </LinearLayout>
